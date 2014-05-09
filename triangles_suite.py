@@ -1,5 +1,5 @@
 #-*-coding: utf8 -*-
-
+from turtle import *
 import math
 import sys
 
@@ -70,6 +70,14 @@ class Triangle() :
         plusPetit = min(x for x in self.angles())
         plusGrand = max(x for x in self.angles())
         return (plusPetit, plusGrand)
+    def triangledessin (self) :      #dessiner le triangle avec turtle
+        up()
+        color("blue")
+        goto(self.A.x*100,self.A.y*100)
+        down()
+        goto(self.B.x*100,self.B.y*100)
+        goto(self.C.x*100,self.C.y*100)
+        goto(self.A.x*100,self.A.y*100) 
 
 def sym(t):
     Aprime = Point()
