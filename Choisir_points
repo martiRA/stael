@@ -1,0 +1,20 @@
+choisir_points = input("voulez vous choisir les points de votre triangle initial? (y or n) ")
+
+if choisir_points == "y":
+
+    p = Point(float(input("P1x")), float(input("P1y")))
+    q = Point(float(input("P2x")), float(input("P2y")))
+    r = Point(float(input("P3x")), float(input("P3y")))
+
+    T = Triangle(p, q, r)
+
+else:
+  
+  p = Point(0, 0)
+  q = Point(3, 2)
+  r = Point(4, 3)
+  
+  T = Triangle(p, q, r)
+  print("les coordonnées par défaut sont"; p, q, r)
+  
+#Après les semestrielles j'aurais le temps de rajouter ici un moyen en plus de choisir un type de triangle (équilatéral etc.)
